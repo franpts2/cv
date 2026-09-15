@@ -1,0 +1,223 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, 
+    top=1.2 cm,  
+    bottom=1.2 cm,
+    left=1.5 cm,  
+    right=1.5 cm, 
+    footskip=0.6 cm,
+]{geometry} 
+\usepackage[explicit]{titlesec} 
+\usepackage{tabularx} 
+\usepackage{array} 
+\usepackage[dvipsnames]{xcolor} 
+\definecolor{primaryColor}{RGB}{0, 18, 51} 
+\usepackage{enumitem} 
+\usepackage{fontawesome5} 
+\usepackage{amsmath} 
+\usepackage[
+    pdftitle={Francisca Portugal's CV},
+    pdfauthor={Francisca Portugal},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} 
+\usepackage[pscoord]{eso-pic} 
+\usepackage{calc} 
+\usepackage{bookmark} 
+\usepackage{lastpage} 
+\usepackage{changepage} 
+\usepackage{paracol} 
+\usepackage{ifthen} 
+\usepackage{needspace} 
+\usepackage{iftex} 
+
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro} 
+
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} 
+\pagestyle{empty} 
+\setcounter{secnumdepth}{0} 
+\setlength{\parindent}{0pt} 
+\setlength{\topskip}{0pt} 
+\setlength{\columnsep}{0cm} 
+
+\titleformat{\section}{
+    \needspace{3\baselineskip}
+    \Large\color{primaryColor}
+}{}{}{
+    \textbf{#1}\hspace{0.1cm}\titlerule[0.8pt]\hspace{-0.1cm} 
+}[]
+
+\titlespacing{\section}{-1pt}{0.2 cm}{0.15 cm}
+
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.06 cm, 
+        parsep=0.06 cm, 
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.3 cm + 8pt 
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0.15 cm}{0.15 cm}
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 3.8 cm} 
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{0.8 cm, \fill, 4.2 cm} 
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.3}
+}{
+    \par\kern\topsep
+}
+
+\newcommand{\placelastupdatedtext}{
+  \AddToShipoutPictureFG*{
+    \put(
+        \LenToUnit{\paperwidth-1.5 cm}, % Positioned exactly at the right margin
+        \LenToUnit{\paperheight-0.7 cm} 
+    ){\vtop{{\null}\makebox[0pt][r]{ % Changed [c] to [r] to fix the cutting off issue
+        \small\color{gray}\textit{Last updated in March 2026}
+    }}}
+  }
+}
+
+\newsavebox\ANDbox
+\sbox\ANDbox{\textbar}
+\newcommand{\AND}{\unskip\cleaders\copy\ANDbox\hskip\wd\ANDbox\ignorespaces}
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+\begin{document}
+    \savebox\ANDbox{}
+    \placelastupdatedtext
+
+    \begin{header}
+        \fontsize{26 pt}{26 pt}
+        \textbf{Francisca Portugal}
+
+        \vspace{0.2 cm} 
+        \normalsize
+        \mbox{{\footnotesize\faMapMarker*}\hspace*{0.1cm}Porto} \kern 0.2 cm \AND \kern 0.2 cm
+        \mbox{\hrefWithoutArrow{mailto:franciscaportugal2005@gmail.com}{{\footnotesize\faEnvelope[regular]}\hspace*{0.1cm}franciscaportugal2005@gmail.com}} \kern 0.2 cm \AND \kern 0.2 cm
+        \mbox{\hrefWithoutArrow{https://franciscapt.dev}{{\footnotesize\faExternalLink*}\hspace*{0.1cm}franciscapt.dev}} \kern 0.2 cm \AND \kern 0.2 cm
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/franciscaportugal}{{\footnotesize\faLinkedinIn}\hspace*{0.1cm}franciscaportugal}} \kern 0.2 cm \AND \kern 0.2 cm
+        \mbox{\hrefWithoutArrow{https://github.com/franpts2}{{\footnotesize\faGithub}\hspace*{0.1cm}franpts2}} 
+    \end{header}
+
+    \vspace{0.2 cm} 
+
+    \section{Profile}
+        \begin{onecolentry}
+            Frontend Developer with a passion for creating high-caliber, intuitive user interfaces. Driven by a product-centric mindset, I frequently venture into full-stack and mobile development to build tools that feel effortless, technically rigorous, and joyful for the user.
+        \end{onecolentry}
+
+    \section{Experience}
+        \begin{twocolentry}{Porto \\ July 2025 – Aug 2025} 
+            \textbf{Robotair (INESC TEC)}, Front-End Intern 
+            \begin{highlights}
+                \item Led 60\% of a full UI/UX redesign for the company's web application, modernizing critical modules like Robots, Pipelines, and Secrets using \textbf{React} and \textbf{Tailwind CSS}.
+                \item Developed custom interfaces for the Rigel testing system and optional ROS deployments, significantly improving platform responsiveness and consistency.
+                \item Contributed to a production-level product used by real clients by fixing critical bugs in build and testing workflows within an agile development environment.
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{twocolentry}{Porto \\ Nov 2025 – Present}
+            \textbf{NIAEFEUP}, Recruit
+            \begin{highlights}
+                \item Contributing to \textbf{uni}, an open-source \textbf{Flutter} application designed to centralize and streamline academic life for university students.
+                \item Developing \textbf{Time Table Selector}, the official FEUP platform for class exchanges and planning, using \textbf{React} to optimize the user scheduling experience.
+                \item Building the organization's new official website with \textbf{Svelte} and \textbf{Tailwind CSS} to improve information accessibility and member engagement.
+            \end{highlights}
+        \end{twocolentry}
+
+    \section{Education}
+        \begin{threecolentry}{\textbf{BSc}}{Sept 2023 – June 2026 (Expected)} 
+            \textbf{University of Porto}, Informatics and Computing Engineering [cite: 19]
+            \begin{highlights}
+                \item \textbf{Relevant Coursework:} Databases and Web Applications Lab (LBAW), Web Technologies and Languages (LTW), Software Engineering (ES), Algorithm Design (DA).
+            \end{highlights}
+        \end{threecolentry}
+
+   \section{Projects}
+    \begin{twocolentry}{\href{https://github.com/franpts2/portfolio}{}}
+        \textbf{Personal Portfolio}
+        \begin{highlights}
+            \item Designed a high-performance website using \textbf{React}, \textbf{TypeScript}, and \textbf{Motion}, featuring interactive UI components, theme switching, and accessibility-first design.
+            \item \hrefWithoutArrow{https://franciscapt.dev}{Live Demo: franciscapt.dev}
+        \end{highlights}
+    \end{twocolentry}
+
+    \vspace{0.15 cm}
+
+     \begin{twocolentry}{\href{https://github.com/franpts2/junto}{}}
+        \textbf{junto. — Social Media Platform}
+        \begin{highlights}
+            \item Co-developed a full-stack social network for cultural interests using \textbf{Laravel}, \textbf{PostgreSQL}, and \textbf{Docker}, architecting a robust schema for media reviews and social interactions.
+            \item Implemented features including Google OAuth, real-time messaging, and AJAX feed updates.
+        \end{highlights}
+    \end{twocolentry}
+
+    \section{Volunteering}
+        \begin{twocolentry}{Sept 2024 – Present}
+            \textbf{VO.U}, Pelos Animais
+            \begin{highlights}
+                \item Actively contribute to animal care and welfare while assisting in events to raise awareness.
+            \end{highlights}
+        \end{twocolentry}
+
+        \vspace{0.1 cm}
+
+        \begin{twocolentry}{Sept 2025 – Present}
+            \textbf{Mentoria UP}
+            \begin{highlights}
+                \item Provide guidance and support to first-year students to facilitate academic and social integration.
+            \end{highlights}
+        \end{twocolentry}
+
+    \section{Skills}
+        \begin{onecolentry}
+            \textbf{Languages:} JavaScript, TypeScript, PHP, Python, Java, C, C++, Dart, Haskell, Prolog, HTML, CSS \\
+            \textbf{Technologies:} React, Svelte, Tailwind CSS, Laravel, Flutter, Firebase, Docker, PostgreSQL, SQLite, Git, Figma
+        \end{onecolentry}
+
+\end{document}
