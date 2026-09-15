@@ -37,7 +37,7 @@
 #show link: set text(fill: primary)
 
 #let cv-section(title) = [
-  #v(0.34cm)
+  #v(0.3cm)
   #block(breakable: false, above: 0pt, below: 0pt)[
     #move(dx: -1pt)[
       #block(width: 100% + 1pt)[
@@ -51,7 +51,7 @@
       ]
     ]
   ]
-  #v(0.27cm)
+  #v(0.23cm)
 ]
 
 #let entry(title, date, body) = block(breakable: false, above: 0pt, below: 0pt)[
@@ -73,14 +73,14 @@
       column-gutter: 0cm,
       align: top,
       strong(degree),
-      [#{ set text(tracking: -0.008em); body } #v(0.12cm)],
+      [#{ set text(tracking: -0.008em); body } #v(0.06cm)],
       align(right, text(hyphenate: false)[#date]),
     )
   ]
 ]
 
 #place(top + right, dy: -0.35cm)[
-  #text(size: 9pt, style: "italic", fill: muted)[Last updated in March 2026]
+  #text(size: 9pt, style: "italic", fill: muted)[Last updated in September 2026]
 ]
 
 #align(center)[
@@ -111,30 +111,48 @@
 #cv-section[Experience]
 
 #entry(
-  [*Robotair (INESC TEC)*, Front-End Intern],
-  [Porto #linebreak() July 2025 – Aug 2025],
+  [*Cloudflare*, Software Engineer Intern],
+  [July 2026 – Present],
 )[
-  - #text(hyphenate: false)[Led 60% of a full UI/UX redesign for the company's web application, modernizing critical modules like Robots, Pipelines, and Secrets using *React* and *Tailwind CSS*.]
-  - Developed custom interfaces for the Rigel testing system and optional ROS deployments, significantly improving platform responsiveness and consistency.
-  - Contributed to a production-level product used by real clients by fixing critical bugs in build and testing workflows within an agile development environment.
+  - Built and shipped a feature-gated Workflows Timeline in the Cloudflare Dashboard with *React*, *TypeScript*, *Kumo*, and *ECharts*, visualizing live step timing, retries, waits, errors, and concurrency.
+  - Migrated the Workflows list to Kumo and fixed search and cache race conditions while preserving server-side search, pagination, metrics, sorting, and workflow actions.
 ]
 
-#v(0.27cm)
+#v(0.12cm)
 
 #entry(
-  [*NIAEFEUP*, Recruit],
-  [Porto #linebreak() Nov 2025 – Present],
+  [*NIAEFEUP*, Project Manager – TTS],
+  [Porto #linebreak() May 2026 – Present],
 )[
-  - Contributing to *uni*, an open-source *Flutter* application designed to centralize and streamline academic life for university students.
-  - Developing *Time Table Selector*, the official FEUP platform for class exchanges and planning, using *React* to optimize the user scheduling experience.
-  - Building the organization's new official website with *Svelte* and *Tailwind CSS* to improve information accessibility and member engagement.
+  - Lead development and continuous improvement of *Time Table Selector*, a React app streamlining class exchanges and academic schedule planning for university students.
+  - Progressed from Recruit (Nov 2025 – Mar 2026) to Member (Mar – May 2026), contributing to *uni* with Flutter and NIAEFEUP's new website with Svelte.
+]
+
+#v(0.12cm)
+
+#entry(
+  [*Robotair*, Frontend Summer Intern],
+  [Porto #linebreak() July 2025 – Aug 2025],
+)[
+  - Played a central role in the UI/UX redesign of the company's web app, modernizing Robots, Pipelines, and Secrets with *React* and *Tailwind CSS*.
+  - Implemented Rigel testing, optional ROS deployments, unit-testing configuration, and critical bug fixes for a production product used by real clients.
 ]
 
 #cv-section[Education]
 
 #education-entry(
+  [MSc],
+  [Sept 2026 – July 2028 #linebreak() (Expected)],
+)[
+  *University of Porto*, #link("https://sigarra.up.pt/feup/en/cur_geral.cur_view?pv_curso_id=10861")[Software Engineering (MESW)]
+  - *Relevant Coursework:* Software Architecture, Testing, and AI for Software Engineering.
+]
+
+#v(0.18cm)
+
+#education-entry(
   [BSc],
-  [Sept 2023 – June 2026 #linebreak() (Expected)],
+  [Sept 2023 – July 2026],
 )[
   *University of Porto*, Informatics and Computing Engineering
   - *Relevant Coursework:* Databases and Web Applications Lab (LBAW), Web Technologies and Languages (LTW), Software Engineering (ES), Algorithm Design (DA).
@@ -150,7 +168,7 @@
   - #link("https://franciscapt.dev")[Live Demo: franciscapt.dev]
 ]
 
-#v(0.21cm)
+#v(0.1cm)
 
 #entry(
   [*junto. — Social Media Platform*],
@@ -169,11 +187,11 @@
   - Actively contribute to animal care and welfare while assisting in events to raise awareness.
 ]
 
-#v(0.16cm)
+#v(0.08cm)
 
 #entry(
   [*Mentoria UP*],
-  [Sept 2025 – Present],
+  [Sept 2025 – July 2026],
 )[
   - Provide guidance and support to first-year students to facilitate academic and social integration.
 ]
