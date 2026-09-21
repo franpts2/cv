@@ -112,7 +112,7 @@
 
 #entry(
   [*Cloudflare*, Software Engineer Intern],
-  [July 2026 – Present],
+  [Lisbon #linebreak() July 2026 – Present],
 )[
   - Built and shipped a feature-gated Workflows Timeline in the Cloudflare Dashboard with *React*, *TypeScript*, *Kumo*, and *ECharts*, visualizing live step timing, retries, waits, errors, and concurrency.
   - Migrated the Workflows list to Kumo and fixed search and cache race conditions while preserving server-side search, pagination, metrics, sorting, and workflow actions.
