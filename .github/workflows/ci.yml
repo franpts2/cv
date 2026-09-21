@@ -1,0 +1,23 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v5
+        with:
+          typst-version: 0.15.1
+      - name: Build CV
+        run: typst compile --font-path fonts --ignore-system-fonts --creation-timestamp 0 main.typ /tmp/main.pdf
+      - name: Check committed PDF
+        run: cmp main.pdf /tmp/main.pdf
