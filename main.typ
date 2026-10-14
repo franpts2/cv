@@ -13,8 +13,8 @@
 #set page(
   paper: "us-letter",
   margin: (
-    top: 1.2cm,
-    bottom: 1.2cm,
+    top: 1.0cm,
+    bottom: 1.0cm,
     left: 1.5cm,
     right: 1.5cm,
   ),
@@ -22,22 +22,22 @@
 
 #set text(
   font: "Source Sans Pro",
-  size: 10pt,
+  size: 9.5pt,
   hyphenate: true,
   top-edge: 0.8em,
   bottom-edge: -0.2em,
 )
-#set par(leading: 0.2em)
+#set par(leading: 0.18em)
 #set list(
   indent: 0.3cm,
   body-indent: 0.17cm,
-  spacing: 0.37em,
+  spacing: 0.28em,
 )
 #show list: it => block(above: 0.06cm, below: 0.06cm)[#it]
 #show link: set text(fill: primary)
 
 #let cv-section(title) = [
-  #v(0.3cm)
+  #v(0.22cm)
   #block(breakable: false, above: 0pt, below: 0pt)[
     #move(dx: -1pt)[
       #block(width: 100% + 1pt)[
@@ -51,7 +51,7 @@
       ]
     ]
   ]
-  #v(0.23cm)
+  #v(0.15cm)
 ]
 
 #let entry(title, date, body) = block(breakable: false, above: 0pt, below: 0pt)[
@@ -60,7 +60,7 @@
       columns: (1fr, 3.8cm),
       column-gutter: 0cm,
       align: top,
-      [#title #{ set text(tracking: -0.008em); body } #v(0.12cm)],
+      [#title #{ set text(tracking: -0.008em); body } #v(0.08cm)],
       align(right, text(hyphenate: false)[#date]),
     )
   ]
@@ -102,11 +102,11 @@
   )
 ]
 
-#v(0.12cm)
+#v(0.08cm)
 
 #cv-section[Profile]
 
-#pad(x: 0.15cm)[#text(tracking: -0.008em, hyphenate: false)[Frontend Developer with a passion for creating high-caliber, intuitive user interfaces. Driven by a product-centric mindset, I frequently venture into full-stack and mobile development to build tools that feel effortless, technically rigorous, and joyful for the user.]]
+#pad(x: 0.15cm)[#text(tracking: -0.008em, hyphenate: false)[Frontend Developer with a passion for creating high-caliber, intuitive user interfaces. Driven by a product-centric mindset, I frequently venture into full-stack development to build tools that feel effortless, technically rigorous, and joyful for the user.]]
 
 #cv-section[Experience]
 
@@ -117,17 +117,17 @@
   - Collaborate in the development of course materials (guides, tutorials) and provide student support in weekly sessions, as well as answering doubts asynchronously.
 ]
 
-#v(0.12cm)
+#v(0.08cm)
 
 #entry(
   [*Cloudflare*, Software Engineer Intern],
-  [Lisbon #linebreak() July 2026 – September 2026],
+  [Lisbon #linebreak() July 2026 – Sept 2026],
 )[
   - Built and shipped a feature-gated Workflows Timeline in the Cloudflare Dashboard with *React*, *TypeScript*, *Kumo*, and *ECharts* — a waterfall chart providing a more comprehensive view of a workflow instance, visualizing live step timing, retries, waits, errors, and concurrency.
   - Contributed to overall improvements across the Workflows section of the dashboard.
 ]
 
-#v(0.12cm)
+#v(0.08cm)
 
 #entry(
   [*NIAEFEUP*, Project Manager – TTS],
@@ -137,7 +137,7 @@
   - Progressed from Recruit (Nov 2025 – Mar 2026) to Member (Mar – May 2026), contributing to *uni* with Flutter and NIAEFEUP's new website with Svelte.
 ]
 
-#v(0.12cm)
+#v(0.08cm)
 
 #entry(
   [*Robotair*, Frontend Summer Intern],
@@ -157,7 +157,7 @@
   - *Relevant Coursework:* Software Architecture, Testing, and AI for Software Engineering.
 ]
 
-#v(0.18cm)
+#v(0.1cm)
 
 #education-entry(
   [BSc],
