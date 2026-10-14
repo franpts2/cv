@@ -151,6 +151,16 @@
 #v(0.18cm)
 
 #education-entry(
+  [TA],
+  [Sept 2026 – Present],
+)[
+  *University of Porto*, Faculty of Engineering — Teaching Assistant, LBAW
+  - Collaborate in the development of course materials (guides, tutorials) and provide student support in weekly sessions, as well as answering doubts asynchronously.
+]
+
+#v(0.18cm)
+
+#education-entry(
   [BSc],
   [Sept 2023 – July 2026],
 )[
