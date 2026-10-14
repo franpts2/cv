@@ -111,11 +111,20 @@
 #cv-section[Experience]
 
 #entry(
-  [*Cloudflare*, Software Engineer Intern],
-  [Lisbon #linebreak() July 2026 – Present],
+  [*University of Porto*, Teaching Assistant – LBAW],
+  [Porto #linebreak() Sept 2026 – Present],
 )[
-  - Built and shipped a feature-gated Workflows Timeline in the Cloudflare Dashboard with *React*, *TypeScript*, *Kumo*, and *ECharts*, visualizing live step timing, retries, waits, errors, and concurrency.
-  - Migrated the Workflows list to Kumo and fixed search and cache race conditions while preserving server-side search, pagination, metrics, sorting, and workflow actions.
+  - Collaborate in the development of course materials (guides, tutorials) and provide student support in weekly sessions, as well as answering doubts asynchronously.
+]
+
+#v(0.12cm)
+
+#entry(
+  [*Cloudflare*, Software Engineer Intern],
+  [Lisbon #linebreak() July 2026 – September 2026],
+)[
+  - Built and shipped a feature-gated Workflows Timeline in the Cloudflare Dashboard with *React*, *TypeScript*, *Kumo*, and *ECharts* — a waterfall chart providing a more comprehensive view of a workflow instance, visualizing live step timing, retries, waits, errors, and concurrency.
+  - Contributed to overall improvements across the Workflows section of the dashboard.
 ]
 
 #v(0.12cm)
@@ -146,16 +155,6 @@
 )[
   *University of Porto*, #link("https://sigarra.up.pt/feup/en/cur_geral.cur_view?pv_curso_id=10861")[Software Engineering (MESW)]
   - *Relevant Coursework:* Software Architecture, Testing, and AI for Software Engineering.
-]
-
-#v(0.18cm)
-
-#education-entry(
-  [TA],
-  [Sept 2026 – Present],
-)[
-  *University of Porto*, Faculty of Engineering — Teaching Assistant, LBAW
-  - Collaborate in the development of course materials (guides, tutorials) and provide student support in weekly sessions, as well as answering doubts asynchronously.
 ]
 
 #v(0.18cm)
