@@ -80,7 +80,7 @@
 ]
 
 #place(top + right, dy: -0.35cm)[
-  #text(size: 9pt, style: "italic", fill: muted)[Last updated in September 2026]
+  #text(size: 9pt, style: "italic", fill: muted)[Last updated in October 2026]
 ]
 
 #align(center)[
@@ -91,7 +91,7 @@
     text(size: 9.35pt, fill: primary, hyphenate: false)[
       #text(size: 8pt)[#fa-solid("\u{f3c5}")] #h(0.1cm) Porto
       #h(0.2cm) | #h(0.2cm)
-      #link("mailto:franciscaportugal2005@gmail.com")[#text(size: 8pt)[#fa-regular("\u{f0e0}")] #h(0.1cm) franciscaportugal2005\@gmail.com]
+      #link("mailto:hello@franciscapt.dev")[#text(size: 8pt)[#fa-regular("\u{f0e0}")] #h(0.1cm) hello\@franciscapt.dev]
       #h(0.2cm) | #h(0.2cm)
       #link("https://franciscapt.dev")[#text(size: 8pt)[#fa-solid("\u{f35d}")] #h(0.1cm) franciscapt.dev]
       #h(0.2cm) | #h(0.2cm)
@@ -133,7 +133,7 @@
   [*NIAEFEUP*, Project Manager – TTS],
   [Porto #linebreak() May 2026 – Present],
 )[
-  - Lead development and continuous improvement of *Time Table Selector*, a React app streamlining class exchanges and academic schedule planning for university students.
+  - Lead development and continuous improvement of *Time Table Selector* (#link("https://tts.niaefeup.pt")[#text(size: 8pt, font: ("Source Sans Pro", "Font Awesome 5 Free Solid"))[tts.niaefeup.pt #h(0.05cm) "\u{f35d}"]]), a React app streamlining class exchanges and academic schedule planning for university students.
   - Progressed from Recruit (Nov 2025 – Mar 2026) to Member (Mar – May 2026), contributing to *uni* with Flutter and NIAEFEUP's new website with Svelte.
 ]
 
@@ -153,7 +153,7 @@
   [MSc],
   [Sept 2026 – July 2028 #linebreak() (Expected)],
 )[
-  *University of Porto*, #link("https://sigarra.up.pt/feup/en/cur_geral.cur_view?pv_curso_id=10861")[Software Engineering (MESW)]
+  *University of Porto*, Software Engineering (MESW)
   - *Relevant Coursework:* Software Architecture, Testing, and AI for Software Engineering.
 ]
 
@@ -171,10 +171,9 @@
 
 #entry(
   [*Personal Portfolio*],
-  [#link("https://github.com/franpts2/portfolio")[#text(size: 8pt)[#fa-solid("\u{f35d}")]]],
+  [#link("https://franciscapt.dev")[#text(size: 8pt, font: ("Source Sans Pro", "Font Awesome 5 Free Solid"))[franciscapt.dev #h(0.05cm) "\u{f35d}"]]],
 )[
   - Designed a high-performance website using *React*, *TypeScript*, and *Motion*, featuring interactive UI components, theme switching, and accessibility-first design.
-  - #link("https://franciscapt.dev")[Live Demo: franciscapt.dev]
 ]
 
 #v(0.1cm)
