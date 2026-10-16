@@ -111,7 +111,7 @@
 #cv-section[Experience]
 
 #entry(
-  [*University of Porto*, Teaching Assistant – LBAW],
+  [*University of Porto*, Teaching Assistant – Databases and Web Applications Lab],
   [Porto #linebreak() Sept 2026 – Present],
 )[
   - Collaborate in the development of course materials (guides, tutorials) and provide student support in weekly sessions, as well as answering doubts asynchronously.
