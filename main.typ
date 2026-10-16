@@ -133,7 +133,7 @@
   [*NIAEFEUP*, Project Manager – TTS],
   [Porto #linebreak() May 2026 – Present],
 )[
-  - Lead development and continuous improvement of *Time Table Selector* (#link("https://tts.niaefeup.pt")[#text(size: 8pt, font: ("Source Sans Pro", "Font Awesome 5 Free Solid"))[tts.niaefeup.pt #h(0.05cm) "\u{f35d}"]]), a React app streamlining class exchanges and academic schedule planning for university students.
+  - Lead development and continuous improvement of *Time Table Selector* (#link("https://tts.niaefeup.pt")[#text(size: 8pt)[tts.niaefeup.pt #h(0.05cm) #fa-solid("\u{f35d}")]]), a React app streamlining class exchanges and academic schedule planning for university students.
   - Progressed from Recruit (Nov 2025 – Mar 2026) to Member (Mar – May 2026), contributing to *uni* with Flutter and NIAEFEUP's new website with Svelte.
 ]
 
@@ -171,7 +171,7 @@
 
 #entry(
   [*Personal Portfolio*],
-  [#link("https://franciscapt.dev")[#text(size: 8pt, font: ("Source Sans Pro", "Font Awesome 5 Free Solid"))[franciscapt.dev #h(0.05cm) "\u{f35d}"]]],
+  [#link("https://franciscapt.dev")[#text(size: 8pt)[franciscapt.dev #h(0.05cm) #fa-solid("\u{f35d}")]]],
 )[
   - Designed a high-performance website using *React*, *TypeScript*, and *Motion*, featuring interactive UI components, theme switching, and accessibility-first design.
 ]
