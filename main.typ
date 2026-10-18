@@ -133,7 +133,8 @@
   [*NIAEFEUP*, Project Manager – TTS],
   [Porto #linebreak() May 2026 – Present],
 )[
-  - Lead development and continuous improvement of *Time Table Selector* (#link("https://tts.niaefeup.pt")[#text(size: 8pt)[tts.niaefeup.pt #h(0.05cm) #fa-solid("\u{f35d}")]]), a React app streamlining class exchanges and academic schedule planning for university students.
+  - Lead *Time Table Selector* (#link("https://tts.niaefeup.pt")[#text(size: 8pt)[tts.niaefeup.pt #h(0.05cm) #fa-solid("\u{f35d}")]]), the open-source platform where University of Porto students experiment with all possible class schedule combinations at the start of the semester, and the official class exchange platform for L.EIC and M.EIC students.
+  - Coordinate the team through a full backend remake, migrating off the legacy *Django* service onto a *Bun* workspace monorepo with a *Bun* + *Elysia* + *Prisma* backend and a *React* + *Vite* + *Tailwind CSS* frontend — setting the roadmap and turning student feedback into product and engineering priorities.
   - Progressed from Recruit (Nov 2025 – Mar 2026) to Member (Mar – May 2026), contributing to *uni* with Flutter and NIAEFEUP's new website with Svelte.
 ]
 
