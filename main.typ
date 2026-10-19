@@ -208,6 +208,7 @@
 #cv-section[Skills]
 
 #pad(x: 0.15cm)[
-  *Languages:* JavaScript, TypeScript, PHP, Python, Java, C, C++, Dart, Haskell, Prolog, HTML, CSS #linebreak()
-  *Technologies:* React, Svelte, Tailwind CSS, Laravel, Flutter, Firebase, Docker, PostgreSQL, SQLite, Git, Figma
+  *Languages:* JavaScript, TypeScript, SQL, PHP, Python, Java, C, C++, Dart, Haskell, Prolog, HTML, CSS #linebreak()
+  *Frameworks & Libraries:* React, Svelte / SvelteKit, Tailwind CSS, Motion, Laravel, Flutter, Bun, Elysia, Prisma, Drizzle ORM #linebreak()
+  *Platforms & Tools:* Cloudflare, PostgreSQL, SQLite, Turso, Firebase, Auth.js, Zod, Docker, Vite, Vitest, Git, GitHub Actions, Figma
 ]
