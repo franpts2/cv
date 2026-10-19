@@ -11,7 +11,7 @@
 )
 
 #set page(
-  paper: "us-letter",
+  paper: "a4",
   margin: (
     top: 1.0cm,
     bottom: 1.0cm,
@@ -23,7 +23,7 @@
 #set text(
   font: "Source Sans Pro",
   size: 9.5pt,
-  hyphenate: true,
+  hyphenate: false,
   top-edge: 0.8em,
   bottom-edge: -0.2em,
 )
@@ -37,7 +37,7 @@
 #show link: set text(fill: primary)
 
 #let cv-section(title) = [
-  #v(0.22cm)
+  #v(0.16cm)
   #block(breakable: false, above: 0pt, below: 0pt)[
     #move(dx: -1pt)[
       #block(width: 100% + 1pt)[
@@ -51,7 +51,7 @@
       ]
     ]
   ]
-  #v(0.15cm)
+  #v(0.1cm)
 ]
 
 #let entry(title, date, body) = block(breakable: false, above: 0pt, below: 0pt)[
@@ -114,7 +114,7 @@
   [*University of Porto*, Teaching Assistant – Databases and Web Applications Lab],
   [Porto #linebreak() Sept 2026 – Present],
 )[
-  - Collaborate in the development of course materials (guides, tutorials) and provide student support in weekly sessions, as well as answering doubts asynchronously.
+  - Build course materials (guides, tutorials) and support students in weekly lab sessions and asynchronously.
 ]
 
 #v(0.08cm)
@@ -124,7 +124,7 @@
   [Lisbon #linebreak() July 2026 – Sept 2026],
 )[
   - Built and shipped a feature-gated Workflows Timeline in the Cloudflare Dashboard with *React*, *TypeScript*, *Kumo*, and *ECharts* — a waterfall chart providing a more comprehensive view of a workflow instance, visualizing live step timing, retries, waits, errors, and concurrency.
-  - Contributed to overall improvements across the Workflows section of the dashboard.
+  - Fixed bugs and improved the *DAG* view that renders each workflow's control flow — nested try/catch blocks, loops, and conditional branches. Also migrated the main Workflows table to *Kumo* (Cloudflare's component library).
 ]
 
 #v(0.08cm)
@@ -135,7 +135,7 @@
 )[
   - Lead *Time Table Selector* (#link("https://tts.niaefeup.pt")[#text(size: 9.5pt)[tts.niaefeup.pt] #h(0.05cm) #text(size: 8pt)[#fa-solid("\u{f35d}")]]), the open-source platform where University of Porto students experiment with all possible class schedule combinations at the start of the semester, and the official class exchange platform for L.EIC and M.EIC students.
   - Coordinate the team through a full backend remake, migrating off the legacy *Django* service onto a *Bun* workspace monorepo with a *Bun* + *Elysia* + *Prisma* backend and a *React* + *Vite* + *Tailwind CSS* frontend — setting the roadmap and turning student feedback into product and engineering priorities.
-  - Progressed from Recruit (Nov 2025 – Mar 2026) to Member (Mar – May 2026), contributing to *uni* with Flutter and NIAEFEUP's new website with Svelte.
+  - Joined as Recruit (Nov 2025), became Member (Mar 2026), and contributed to *uni* with Flutter and NIAEFEUP's new website with Svelte.
 ]
 
 #v(0.08cm)
@@ -193,7 +193,7 @@
   [*VO.U*, Pelos Animais],
   [Sept 2024 – Present],
 )[
-  - Actively contribute to animal care and welfare while assisting in events to raise awareness.
+  - Animal care and welfare, plus running awareness events.
 ]
 
 #v(0.08cm)
@@ -202,7 +202,7 @@
   [*Mentoria UP*],
   [Sept 2025 – July 2026],
 )[
-  - Provide guidance and support to first-year students to facilitate academic and social integration.
+  - Mentor first-year students through their academic and social transition to university.
 ]
 
 #cv-section[Skills]
