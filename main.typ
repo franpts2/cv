@@ -174,17 +174,17 @@
   [*Personal Portfolio*],
   [#link("https://franciscapt.dev")[#text(size: 8pt)[franciscapt.dev #h(0.05cm) #fa-solid("\u{f35d}")]]],
 )[
-  - Designed a high-performance website using *React*, *TypeScript*, and *Motion*, featuring interactive UI components, theme switching, and accessibility-first design.
+  - Designed and built the site from scratch with *React 19*, *TypeScript*, *Tailwind CSS v4*, *Motion*, and *Vite*, including a custom design system, physics-based interactions, a scroll-driven narrative, and a *Cloudflare Pages Functions* contact pipeline with validation, rate limiting, and spam protection.
 ]
 
 #v(0.1cm)
 
 #entry(
-  [*junto. — Social Media Platform*],
-  [#link("https://github.com/franpts2/junto")[#text(size: 8pt)[#fa-solid("\u{f35d}")]]],
+  [*Cadence*],
+  [#link("https://cadence.franciscapt.dev")[#text(size: 8pt)[cadence.franciscapt.dev #h(0.05cm) #fa-solid("\u{f35d}")]]],
 )[
-  - Co-developed a full-stack social network for cultural interests using *Laravel*, *PostgreSQL*, and *Docker*, architecting a robust schema for media reviews and social interactions.
-  - Implemented features including Google OAuth, real-time messaging, and AJAX feed updates.
+  - Designed and shipped a full-stack music journal that turns daily Spotify picks into an interactive calendar, using *SvelteKit*, *Svelte 5*, *TypeScript*, *Tailwind CSS*, and *Cloudflare*.
+  - Implemented Spotify OAuth with *Auth.js*, a *Drizzle* / *Turso* schema, drag-and-drop rescheduling with touch support, playlist import/export, and song previews.
 ]
 
 #cv-section[Volunteering]
