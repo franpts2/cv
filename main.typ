@@ -80,7 +80,7 @@
 ]
 
 #place(top + right, dy: -0.35cm)[
-  #text(size: 9pt, style: "italic", fill: muted)[Last updated in October 2026]
+  #text(size: 9pt, style: "italic", fill: muted)[Last updated in November 2026]
 ]
 
 #align(center)[
@@ -183,8 +183,8 @@
   [*Cadence*],
   [#link("https://cadence.franciscapt.dev")[#text(size: 9.5pt)[cadence.franciscapt.dev] #h(0.05cm) #text(size: 8pt)[#fa-solid("\u{f35d}")]]],
 )[
-  - Designed and shipped a full-stack music journal that turns daily Spotify picks into an interactive calendar, using *SvelteKit*, *Svelte 5*, *TypeScript*, *Tailwind CSS*, and *Cloudflare*.
-  - Implemented Spotify OAuth with *Auth.js*, a *Drizzle* / *Turso* schema, drag-and-drop rescheduling with touch support, playlist import/export, and song previews.
+  - Designed and shipped a full-stack music journal where each day gets a song, explored through an interactive calendar; built with *SvelteKit*, *Svelte 5*, *TypeScript*, *Tailwind CSS*, and *Cloudflare*.
+  - Implemented Google OAuth with *Auth.js*, a *Drizzle* / *Turso* data layer and Spotify Web API search; added drag-and-drop rescheduling with touch support, song previews, and shareable month images.
 ]
 
 #cv-section[Volunteering]
