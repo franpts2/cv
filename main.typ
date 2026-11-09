@@ -183,7 +183,7 @@
   [*Cadence*],
   [#link("https://cadence.franciscapt.dev")[#text(size: 9.5pt)[cadence.franciscapt.dev] #h(0.05cm) #text(size: 8pt)[#fa-solid("\u{f35d}")]]],
 )[
-  - Designed and shipped a full-stack music journal where each day gets a song, explored through an interactive calendar; built with *SvelteKit*, *Svelte 5*, *TypeScript*, *Tailwind CSS*, and *Cloudflare*.
+  - Designed and shipped a full-stack music journal where each day gets a song, explored through an interactive calendar; built with *SvelteKit*, *Svelte 5*, *TypeScript*, and *Tailwind CSS*, deployed by *Cloudflare*.
   - Implemented Google OAuth with *Auth.js*, a *Drizzle* / *Turso* data layer and Spotify Web API search; added drag-and-drop rescheduling with touch support, song previews, and shareable month images.
 ]
 
