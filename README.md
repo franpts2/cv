@@ -1,12 +1,15 @@
-# Francisca Portugal - CV
+# Francisca Portugal — CV
 
-[![Build](https://github.com/franpts2/cv/actions/workflows/ci.yml/badge.svg)](https://github.com/franpts2/cv/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+Source and generated PDF for a one-page software engineering CV, written in Typst.
 
-<div align="left">
-    <img src="https://img.shields.io/badge/Typst-239DAD?style=for-the-badge&logo=typst&logoColor=white" alt="Typst"/>
-    <img src="https://img.shields.io/badge/PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="PDF"/>
-</div>
+<p align="left">
+  <a href="https://github.com/franpts2/cv/actions/workflows/ci.yml"><img src="https://github.com/franpts2/cv/actions/workflows/ci.yml/badge.svg" alt="CI status"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/MIT-green?style=flat-square" alt="MIT license"></a>
+</p>
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Typst-239DAD?style=for-the-badge&logo=typst&logoColor=white" alt="Typst">
+</p>
 
 ## About
 
@@ -16,7 +19,7 @@ Source and generated PDF for Francisca Portugal's one-page software engineering 
 
 `main.typ` is the authoritative source.
 
-## Build
+## Quick Start
 
 ### Prerequisites
 
@@ -44,3 +47,7 @@ This public repository intentionally contains the personal and professional cont
 ## License
 
 The CV source and layout are available under the [MIT License](LICENSE). Vendored fonts remain subject to the license files in `fonts/`.
+
+---
+
+_CV — the source and the PDF, in one place._
